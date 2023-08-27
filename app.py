@@ -281,7 +281,7 @@ def manage_requests():
         error = 'Unable to manage requests'
         return render_template('home.html',error = error)
 
-#Helper function to determine whether theyre exists a follower tuple within DB
+#Helper function to determine whether there exists a follower tuple within DB
 def follow_user(follower,followee):
     cursor = connection.cursor()
     query = 'SELECT * FROM Follow WHERE follower=%s and followee=%s'
