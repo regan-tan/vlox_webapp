@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>vlox</title>
+  </head>
+
+  <style media="screen">
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          background-color: #292929;
+          color: white;
+        }
+
+  </style>
+
+  <body>
+
+    <div class="header">
+      <h1 class="title">vlox</h1>
+
+      <div class="homeButton">
+        <a href="/">Home</a>
+      </div>
+    </div>
+
+    <div class="loginForm">
+      <h2 >Login</h2>
+
+      <form action="/loginAuth" method="POST">
+        Username:
+        <input type="text" name="username" placeholder="Username... " required> <br>
+        Password:
+        <input type="password" name="password" placeholder="Password... " required> <br>
+        <input type="submit" value = Login />
+        {% if error %}
+            <p class="error">{{error}}</p>
+        {% endif %}
+      </form>
+    </div>
+
+
+  </body>
+</html>
