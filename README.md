@@ -10,3 +10,7 @@ Users can: <br>
 - Create friend groups
 - Limit who see their posts
 - Like and comment on photos
+
+
+Adapted and referenced from: https://github.com/Niangmodou/Instagram-Clone
+Updated by RojakRookies
